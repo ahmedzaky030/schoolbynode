@@ -1,0 +1,24 @@
+{
+  "name": "schoolbynode",
+  "version": "1.0.0",
+  "description": "school app is built by node and express",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Zaky",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "mongo": "^0.1.0",
+    "nodemon": "^1.11.0"
+  }
+}
