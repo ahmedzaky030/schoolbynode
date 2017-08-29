@@ -1,0 +1,2 @@
+# schoolbynode
+MEAN Application
