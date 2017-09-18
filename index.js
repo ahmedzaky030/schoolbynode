@@ -23,11 +23,6 @@ app.use('/' , function(req , res , next){
     res.render("index");    
 });
 
-
-
-
-
-
 app.listen(3000 , function(){
     console.log('Server is working on 3000');
 });
