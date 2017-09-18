@@ -1,0 +1,71 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            School test 
+        </title>
+        <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+        
+
+    </head>
+    <body ng-app="myApp">
+
+        <div ng-controller="myController">
+            <label>Age</label>:
+             <input type="number" ng-model="age" name="age" /> <br/>
+             <label>Language</label>:
+             <select type="number" ng-model="lang" name="age">
+                 <option value="Ar">Arabic</option>
+                 <option value="EN">English</option>
+                 <option value="FR">Francois</option>
+             </select>
+             <button ng-click="getdata()"  class="btn btn-primary">
+                 Get Data
+             </button>
+             <ul ng-repeat=" st in students">
+                 <li>Name : {{st.name}}  && Age : {{st.age}} && Language : {{st.lang}}</li>
+             </ul>
+
+
+
+
+
+            <h1>Hello Student</h1>
+            <div class="col-3">
+                <form name="myform" ng-submit="submit()">
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" placeholder="Name">
+
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="exampleInputPassword1">Age</label>
+                        <input type="number" class="form-control" name="age" id="exampleInputPassword1" placeholder="Age">
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="exampleInputPassword2">Lang</label>
+                        <select class="form-control" id="exampleInputPassword2" name="lang">
+                                <option value="Ar">Arabic</option>
+                                <option value="EN">English</option>
+                                <option value="FR">Francois</option>
+                            </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+       
+        <script  type="text/javascript" src="../lib/angular/angular.min.js" ></script>
+        <script type="text/javascript" src="../js/app.js"></script>
+        <script type="text/javascript" src="../lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../lib/bootstrap/dist/js/booststrap.min.js"></script>
+        
+   
+    </body>
+</html>
